@@ -222,6 +222,17 @@ header {
   text-align: center;
 }
 
+.section-img {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.img {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+}
 /* Footer Styles */
 
 footer {
@@ -238,4 +249,43 @@ footer a {
   color: black;
   padding: 15px 15px;
   border: 1px solid dimgray;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 500px) {
+	header {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.navbar {
+		display: flex;
+		justify-content: center;
+	}
+
+	.navbar ul{
+		display: flex;
+		flex-direction: column;
+		width: 33%;
+	}
+
+	/* Showcase Area Styles */
+
+	.showcase {
+		width: 80%;
+		height: 200px;
+		background: cover;
+		background-position: bottom center;
+	}
+
+	/* Image Section Styles */
+
+	.img {
+		width: 45%;
+	}
+
 }
